@@ -1,0 +1,25 @@
+name: my_portfolio
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  qr_flutter: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/tipos-de-escenario.jpg
+    - assets/images/Anfiteatro.png
+    - assets/images/Paisaje_menu.png
+    - assets/images/Mascaras_teatrales.png
