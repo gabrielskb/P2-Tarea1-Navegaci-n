@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import '../menu/menu_lateral.dart';
 
 class CabeceraPortfolio extends StatelessWidget {
   const CabeceraPortfolio({super.key});

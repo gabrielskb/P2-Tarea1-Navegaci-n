@@ -1,10 +1,17 @@
+
 import 'package:flutter/material.dart';
 
 class MenuLateral extends StatelessWidget {
   final VoidCallback onBienvenida;
   final VoidCallback onPortfolio;
+  final VoidCallback onGestionarEventos;
 
-  const MenuLateral({super.key, required this.onBienvenida, required this.onPortfolio});
+  const MenuLateral({
+    super.key,
+    required this.onBienvenida,
+    required this.onPortfolio,
+    required this.onGestionarEventos,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +69,13 @@ class MenuLateral extends StatelessWidget {
               leading: const Icon(Icons.work, color: Color(0xFF344955)),
               title: const Text('Portfolio'),
               onTap: onPortfolio,
+            ),
+
+            // OPCIÓN: GESTIONAR EVENTOS
+            ListTile(
+              leading: const Icon(Icons.event, color: Color(0xFF344955)),
+              title: const Text('Gestionar eventos'),
+              onTap: onGestionarEventos,
             ),
 
             const Spacer(),

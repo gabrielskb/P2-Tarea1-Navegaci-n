@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../crud/elementos_screen.dart';
 import '../menu/menu_lateral.dart';
 import '../widgets/mi_portfolio.dart';
 
@@ -18,6 +19,15 @@ class BienvenidaScreen extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => const MiPortfolio(),
+            ),
+          );
+        },
+        onGestionarEventos: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ElementosScreen(),
             ),
           );
         },

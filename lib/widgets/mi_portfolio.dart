@@ -4,6 +4,7 @@ import 'cabecera_portfolio.dart';
 import 'perfil_portfolio.dart';
 import 'contenido_portfolio.dart';
 import 'navegacion_portfolio.dart';
+import '../crud/elementos_screen.dart';
 import '../menu/menu_lateral.dart';
 
 class MiPortfolio extends StatefulWidget {
@@ -34,6 +35,15 @@ class _MiPortfolioState extends State<MiPortfolio> {
         },
         onPortfolio: () {
           Navigator.pop(context);
+        },
+        onGestionarEventos: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ElementosScreen(),
+            ),
+          );
         },
       ),
 
